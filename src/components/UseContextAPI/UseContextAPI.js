@@ -2,18 +2,16 @@ import React, { useContext } from 'react';
 // Context API
 import { Context } from '../../App';
 
-const Special = (props) => {
-    const {ornaments} = props;
-    
+const UseContextAPI = () => {
     // Context API
     const value = useContext(Context);
     return (
         <div>
-            <h2>Special</h2>
-            <p>{ornaments}</p>
+            <h3>UseContextAPI</h3>
+            {/* Context API value */}
             <small>{value}</small>
         </div>
     );
 };
 
-export default Special;
+export default UseContextAPI;
